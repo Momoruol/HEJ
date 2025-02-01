@@ -262,6 +262,8 @@ a {
 
 .prices .card-price {
 	background-color: #00135d;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+		rgba(0, 0, 0, 0.23) 0px 6px 6px;
 	border-radius: 20px;
 	color: #fff;
 	max-width: 400px;
