@@ -342,6 +342,7 @@ a {
 		width: 100%;
 	}
 	.cta img {
+		max-width: 100%;
 		margin: 0 auto;
 	}
 	.services .card {
