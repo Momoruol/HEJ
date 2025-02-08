@@ -10,6 +10,7 @@
 
 body {
 	font-family: 'Lato', sans-serif;
+	scroll-behavior: smooth;
 }
 .wrapper {
 	height: 100vh;
@@ -209,7 +210,7 @@ a {
 
 .about img {
 	grid-column: span 2;
-	max-width: 100%;
+	max-width: 50%;
 	filter: invert();
 }
 .about .about-text {
@@ -307,6 +308,38 @@ a {
 	}
 }
 
+/* Footer */
+footer {
+	background-color: var(--primary-color);
+	padding: 2rem 0;
+}
+
+.contact-socials {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	color: #fff;
+}
+.contact-socials .socials ul {
+	display: flex;
+	gap: 2rem;
+}
+.footer-text h2 {
+	font-size: 2rem;
+}
+.footer-text p {
+	font-size: 1.2rem;
+}
+footer .useful-links ul {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+footer .useful-links .links-header {
+	font-size: 2rem;
+}
+
 /* Media Queries */
 
 @media (max-width: 1024px) {
@@ -314,11 +347,10 @@ a {
 		height: 100%;
 		padding-bottom: 200px;
 	}
-	.about .grid-3 {
-		grid-template-columns: 1fr;
+	.about .flex {
+		flex-direction: column;
 	}
 	.about img {
-		grid-column: 1;
 		width: 600px;
 		margin: 0 auto;
 	}
@@ -338,12 +370,19 @@ a {
 		text-align: center;
 		margin-bottom: 24px;
 	}
+	.cta-text h1,
+	.cta-text p {
+		text-align: start;
+	}
 	.cta-text a.btn {
 		width: 100%;
 	}
 	.cta img {
 		max-width: 100%;
 		margin: 0 auto;
+	}
+	.about img {
+		max-width: 100%;
 	}
 	.services .card {
 		max-width: 100%;

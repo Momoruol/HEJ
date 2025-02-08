@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Portfolio</title>
+		<title>HEJ Tech</title>
+		<link rel="icon" href="./images/logo_icon.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -22,16 +23,16 @@
 	<body>
 		<div class="wrapper">
 			<!-- Navbar -->
-			<div class="navbar">
+			<div class="navbar" id="inicio">
 				<div class="container flex">
 					<div class="logo">
 						<p>Desenvolvedores Web</p>
 					</div>
 					<nav class="nav">
 						<ul>
-							<li><a href="">Início</a></li>
-							<li><a href="">Serviços</a></li>
-							<li><a href="">Sobre</a></li>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="#serviços">Serviços</a></li>
+							<li><a href="contato.html">Contato</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -55,7 +56,7 @@
 
 		<!-- CTA Section -->
 		<section class="cta">
-			<div class="container grid grid-2 p-48">
+			<div class="container flex p-48">
 				<div class="cta-text">
 					<h1>
 						Quer aumentar sua visibilidade online mas não sabe como?
@@ -72,7 +73,7 @@
 		</section>
 
 		<!-- Serviços Prestados -->
-		<section class="services">
+		<section class="services" id="serviços">
 			<div class="container">
 				<h2>Oferecemos serviços de Qualidade para sua empresa</h2>
 				<div class="grid grid-3">
@@ -121,7 +122,7 @@
 
 		<!-- About us Section -->
 		<section class="about">
-			<div class="container container-large grid grid-3 px-24">
+			<div class="container container-large flex px-24">
 				<img src="./images/Logo.png" alt="" />
 
 				<div class="about-text">
@@ -249,6 +250,42 @@
 		</section>
 
 		<!-- Footer -->
-		<footer></footer>
+		<footer>
+			<div class="container flex">
+				<div class="contact-socials">
+					<div class="footer-text">
+						<h2>Fale Conosco!</h2>
+						<p>
+							Encontre nós nas Redes Sociais! Respondemos em até 1
+							dia útil.
+						</p>
+					</div>
+					<div class="socials">
+						<ul>
+							<li>
+								<a href=""
+									><i class="fa-brands fa-instagram fa-3x"></i
+								></a>
+							</li>
+							<li>
+								<a href=""
+									><i class="fa-brands fa-linkedin fa-3x"></i
+								></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="useful-links">
+					<ul>
+						<h2 class="links-header">Links Úteis</h2>
+						<li><a href="#serviços">Serviços</a></li>
+						<li>
+							<a href="https://github.com/Momoruol">Github</a>
+						</li>
+						<li><a href="#inicio">Início</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
