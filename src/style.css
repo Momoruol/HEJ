@@ -24,6 +24,25 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.wrapper-contact {
+	height: 100vh;
+	background: linear-gradient(
+			0deg,
+			rgba(23, 0, 147, 0.9) 20%,
+			rgba(8, 10, 9, 0.9) 100%
+		),
+		url(../images/wrapper-contact.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.bg-primary {
+	background-color: var(--primary-color);
+}
+.transparent {
+	background-color: transparent;
+}
 
 .container {
 	max-width: 1120px;
@@ -68,10 +87,10 @@ a {
 /* NavBar */
 
 .navbar {
+	height: 80px;
 	padding: 15px 30px;
 	max-width: 100%;
 	color: #fff;
-	background-color: transparent;
 }
 
 .nav ul {
@@ -340,6 +359,56 @@ footer .useful-links .links-header {
 	font-size: 2rem;
 }
 
+/* Form Contato */
+form h1 {
+	text-align: center;
+	color: #fff;
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+}
+form .form-info input {
+	font-size: 1rem;
+	padding: 1rem;
+	width: 500px;
+	border: none;
+	border-bottom: 1px solid #333;
+	border-radius: 5px;
+	outline: 0;
+}
+form textarea {
+	height: 160px;
+	font-size: 1rem;
+	padding: 1rem 1rem;
+	resize: none;
+	width: 500px;
+	border: none;
+	border: 1px solid #333;
+	border-radius: 5px;
+	outline: 0;
+}
+form .container {
+	padding: 4rem 0;
+	height: 100%;
+}
+form .form .button {
+	text-align: center;
+	border: none;
+	width: 40%;
+	padding: 1rem 3rem;
+	background-color: #000c43;
+	color: #fff;
+	border-radius: 5px;
+	transition: all 0.2s ease-in-out;
+}
+form .form .button:hover {
+	transform: scale(1.1);
+	background-color: #001057;
+}
+form .flex {
+	flex-direction: column;
+	gap: 2rem;
+}
+
 /* Media Queries */
 
 @media (max-width: 1024px) {
@@ -353,6 +422,9 @@ footer .useful-links .links-header {
 	.about img {
 		width: 600px;
 		margin: 0 auto;
+	}
+	footer .container {
+		padding: 4rem 2rem;
 	}
 }
 @media (max-width: 768px) {
@@ -406,6 +478,10 @@ footer .useful-links .links-header {
 			transition: all 0.2s ease-in-out;
 		}
 	}
+	footer .flex {
+		flex-direction: row;
+		gap: 10rem;
+	}
 }
 @media (max-width: 425px) {
 	.cta img {
@@ -427,5 +503,10 @@ footer .useful-links .links-header {
 	}
 	.hero .texto-titulo {
 		font-size: 12px;
+	}
+	footer .flex {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 5rem;
 	}
 }
