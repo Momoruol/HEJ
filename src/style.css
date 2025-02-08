@@ -361,6 +361,7 @@ footer .useful-links .links-header {
 
 /* Form Contato */
 form h1 {
+	max-width: 100%;
 	text-align: center;
 	color: #fff;
 	padding-top: 3rem;
@@ -481,6 +482,18 @@ form .flex {
 	footer .flex {
 		flex-direction: row;
 		gap: 10rem;
+	}
+	.form {
+		padding: 0 1rem;
+	}
+	.form label {
+		width: 100%;
+	}
+	form .form-info input {
+		width: 100%;
+	}
+	form textarea {
+		width: 100%;
 	}
 }
 @media (max-width: 425px) {
