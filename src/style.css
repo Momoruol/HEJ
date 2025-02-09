@@ -434,7 +434,7 @@ form .flex {
 		grid-template-columns: 1fr;
 	}
 	.nav {
-		margin-top: 48px;
+		margin-top: 24px;
 	}
 	.flex {
 		flex-direction: column;
@@ -495,6 +495,9 @@ form .flex {
 	form textarea {
 		width: 100%;
 	}
+	form .form .button {
+		width: 90%;
+	}
 }
 @media (max-width: 425px) {
 	.cta img {
@@ -521,5 +524,8 @@ form .flex {
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 5rem;
+	}
+	form .form .button {
+		width: 90%;
 	}
 }
