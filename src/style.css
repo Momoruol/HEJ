@@ -292,42 +292,42 @@ span {
 	max-width: 400px;
 	height: 500px;
 	text-align: center;
-	.head {
-		font-size: 24px;
-		padding: 30px 0;
-		background-color: #000c43;
-		border-top-left-radius: 20px;
-		border-top-right-radius: 20px;
-	}
-	.price {
-		font-size: 36px;
-		padding: 30px 0;
-	}
-	.details {
-		font-size: 24px;
-		padding: 40px 0;
-	}
+}
+.prices .head {
+	font-size: 24px;
+	padding: 30px 0;
+	background-color: #000c43;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+.prices .price {
+	font-size: 36px;
+	padding: 30px 0;
+}
+.prices .details {
+	font-size: 24px;
+	padding: 40px 0;
+}
 
-	li {
-		padding: 4px 16px;
-		text-align: start;
-	}
-	li i {
-		margin-right: 8px;
-	}
-	.btn {
-		display: inline-block;
-		margin: 10px;
-		padding: 8px 36px;
-		background-color: var(--primary-color);
-		border-radius: 10px;
-		transition: all 0.2s ease-in-out;
-	}
-	.btn:hover {
-		background-color: #000c43;
-		transform: scale(1.2);
-		font-weight: bold;
-	}
+.prices .card-price ul li {
+	padding: 4px 16px;
+	text-align: start;
+}
+.card-price ul li i {
+	margin-right: 8px;
+}
+.card-price .btn {
+	display: inline-block;
+	margin: 10px;
+	padding: 8px 36px;
+	background-color: var(--primary-color);
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
+}
+.card-price .btn:hover {
+	background-color: #000c43;
+	transform: scale(1.2);
+	font-weight: bold;
 }
 
 /* Footer */
