@@ -402,6 +402,7 @@ form .form .button {
 	background-color: #000c43;
 	color: #fff;
 	border-radius: 5px;
+	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 }
 form .form .button:hover {
