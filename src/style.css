@@ -8,14 +8,6 @@
 	--primary-color: #170093;
 }
 
-.svg {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100px;
-}
-
 body {
 	font-family: 'Lato', sans-serif;
 	scroll-behavior: smooth;
@@ -432,6 +424,9 @@ form .flex {
 /* Media Queries */
 
 @media (max-width: 1024px) {
+	.svg-about {
+		display: none;
+	}
 	.about {
 		height: 100%;
 		padding-bottom: 200px;
@@ -448,6 +443,9 @@ form .flex {
 	}
 }
 @media (max-width: 768px) {
+	.svg-wrapper {
+		display: none;
+	}
 	.grid-2,
 	.grid-3 {
 		grid-template-columns: 1fr;
