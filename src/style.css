@@ -23,7 +23,7 @@ body {
 }
 .wrapper {
 	position: relative;
-	height: 100vh;
+	height: 100dvh;
 	background: #170093;
 	background: linear-gradient(
 			180deg,
