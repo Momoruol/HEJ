@@ -19,7 +19,7 @@ body {
 	scroll-behavior: smooth;
 }
 .wrapper {
-	height: 100dvh;
+	height: 100vh;
 	background: #170093;
 	background: linear-gradient(
 			180deg,
