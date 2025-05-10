@@ -10,7 +10,6 @@
 
 .svg-wrapper {
 	background-image: url('Waves.svg');
-	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
@@ -22,7 +21,6 @@ body {
 	scroll-behavior: smooth;
 }
 .wrapper {
-	position: relative;
 	height: 100dvh;
 	background: #170093;
 	background: linear-gradient(
@@ -116,6 +114,7 @@ span {
 /* Hero Section */
 .hero-section {
 	height: 800px;
+	position: relative;
 }
 .hero-container {
 	height: 100%;
