@@ -8,16 +8,14 @@
 	--primary-color: #170093;
 }
 
-.svg-wrapper {
-	background-image: url('Waves.svg');
-	width: 100%;
-	height: 100px;
-}
-
 body {
 	font-family: 'Lato', sans-serif;
 	scroll-behavior: smooth;
 }
+.divider {
+	position: relative;
+}
+
 .wrapper {
 	height: 100vh;
 	background: #170093;
@@ -25,7 +23,7 @@ body {
 			180deg,
 			rgba(23, 0, 147, 0.6) 20%,
 			rgba(23, 0, 64, 0.8) 70%,
-			rgba(23, 0, 64, 1) 87%
+			#170040 87%
 		),
 		url(../images/wrapper.jpg);
 	background-size: cover;
@@ -232,11 +230,7 @@ span {
 /* About */
 .about {
 	background: #170093;
-	background: linear-gradient(
-		180deg,
-		rgba(23, 0, 147, 1) 50%,
-		rgba(23, 0, 64, 1) 100%
-	);
+	background: linear-gradient(180deg, rgba(23, 0, 147, 1) 50%, #170040 100%);
 	max-width: 100%;
 	height: 100vh;
 }
@@ -428,6 +422,47 @@ form .flex {
 	gap: 2rem;
 }
 
+/* dividers */
+/* divider hero */
+.custom-shape-divider-top-1746882921 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.custom-shape-divider-top-1746882921 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 150px;
+}
+
+.custom-shape-divider-top-1746882921 .shape-fill {
+	fill: #170040;
+}
+/* divider about */
+.custom-shape-divider-top-1746883469 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.custom-shape-divider-top-1746883469 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 70px;
+}
+
+.custom-shape-divider-top-1746883469 .shape-fill {
+	fill: #170040;
+}
 /* Media Queries */
 
 @media (max-width: 1024px) {
@@ -518,7 +553,7 @@ form .flex {
 	}
 }
 @media (max-width: 425px) {
-	.svg-wrapper {
+	.divider {
 		display: none;
 	}
 	.cta img {
