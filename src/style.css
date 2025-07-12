@@ -550,14 +550,6 @@ form .flex {
 .portfolio-hero .flex {
 	justify-content: space-between;
 }
-@media (min-width: 768px) {
-	.portfolio-hero-img {
-		max-width: 50%;
-	}
-	.portfolio-hero-text {
-		align-items: flex-start;
-	}
-}
 
 /* dividers */
 /* divider hero */
@@ -601,6 +593,14 @@ form .flex {
 	fill: #170040;
 }
 /* Media Queries */
+@media (min-width: 768px) {
+	.portfolio-hero-img {
+		max-width: 50%;
+	}
+	.portfolio-hero-text {
+		align-items: flex-start;
+	}
+}
 
 @media (max-width: 1024px) {
 	.about {
