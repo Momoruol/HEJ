@@ -46,8 +46,19 @@ body {
 .bg-primary {
 	background-color: var(--primary-color);
 }
+.block:not(:last-child) {
+	margin-bottom: 1.5rem;
+}
 .transparent {
 	background-color: transparent;
+}
+.title {
+	color: #fff;
+	font-size: 3rem;
+}
+.sub-title {
+	color: #fff;
+	font-size: 1.2rem;
 }
 
 .container {
@@ -76,7 +87,7 @@ a {
 	display: grid;
 	align-items: center;
 	justify-content: center;
-	gap: 32px;
+	gap: 2rem;
 }
 .grid-3 {
 	grid-template-columns: repeat(3, 1fr);
@@ -420,6 +431,132 @@ form .form .button:hover {
 form .flex {
 	flex-direction: column;
 	gap: 2rem;
+}
+
+/* Casos */
+.cases {
+	padding: 1rem;
+}
+
+.case-grid .grid {
+	padding-top: 3rem;
+}
+.case {
+	cursor: pointer;
+	max-width: 100%;
+	height: 200px;
+	border: 1px solid #fff;
+	border-radius: 1rem;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	transition: all 0.25s;
+}
+.case:hover {
+	transform: scale(1.05);
+}
+
+.case-text {
+	padding-top: 6rem;
+	text-align: center;
+}
+.case p {
+	text-align: center;
+	letter-spacing: 0.25rem;
+	font-size: 1.25rem;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+}
+.case::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	opacity: 0.3;
+	z-index: -1;
+}
+.case:nth-child(1)::before {
+	background-image: url('../images/Case_Alpha.png');
+	border-radius: 1rem;
+}
+.case:nth-child(2)::before {
+	background-image: url('../images/Case_Urgemed.png');
+	border-radius: 1rem;
+}
+.case:nth-child(3)::before {
+	background-image: url('../images/Case_Jmg_contabilidade.png');
+	border-radius: 1rem;
+}
+/* Portfolio Hero */
+.gradient-blue {
+	background-color: linear-gradient(
+		0deg,
+		rgba(23, 0, 147, 0.9) 20%,
+		rgba(8, 10, 9, 0.9) 100%
+	);
+}
+
+.portfolio-hero {
+	padding: 1rem;
+}
+
+#portfolio-hero {
+	padding-top: 8rem;
+}
+.portfolio-hero-text {
+	color: #fff;
+	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+.hero-btn {
+	font-size: 1.25rem;
+	color: #000;
+	border: 1px solid #fff;
+	display: inline-block;
+	margin: 10px;
+	padding: 8px 36px;
+	background-color: #fff;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+	margin-bottom: 5rem;
+}
+.hero-btn:hover {
+	transform: scale(1.2);
+	font-weight: bold;
+}
+
+.portfolio-hero-img {
+	max-width: 100%;
+	border-radius: 40px;
+}
+.portfolio-hero img {
+	border-radius: 40px;
+}
+
+.portfolio-hero .flex {
+	justify-content: space-between;
+}
+@media (min-width: 768px) {
+	.portfolio-hero-img {
+		max-width: 50%;
+	}
+	.portfolio-hero-text {
+		align-items: flex-start;
+	}
 }
 
 /* dividers */
