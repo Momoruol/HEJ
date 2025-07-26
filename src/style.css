@@ -25,7 +25,7 @@ body {
 			rgba(23, 0, 64, 0.8) 70%,
 			#170040 87%
 		),
-		url(../images/wrapper.jpg);
+		url(../images/wrapper.webp);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -34,13 +34,16 @@ body {
 	height: 100%;
 	background: linear-gradient(
 			0deg,
-			rgba(23, 0, 147, 0.9) 20%,
+			rgba(23, 0, 147, 1) 10%,
 			rgba(8, 10, 9, 0.9) 100%
 		),
-		url(../images/wrapper-contact.jpg);
+		url(../images/wrapper-contact.webp);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+.min-h-screen {
+	height: 100vh;
 }
 
 .bg-primary {
@@ -101,7 +104,7 @@ a {
 	align-items: center;
 }
 span {
-	font-size: 2rem;
+	font-size: 1.25rem;
 }
 
 /* NavBar */
@@ -313,14 +316,14 @@ span {
 	text-align: center;
 }
 .prices .head {
-	font-size: 24px;
+	font-size: 1.25rem;
 	padding: 30px 0;
 	background-color: #000c43;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 }
 .prices .price {
-	font-size: 36px;
+	font-size: 1.5rem;
 	padding: 30px 0;
 }
 .prices .details {
@@ -341,11 +344,11 @@ span {
 	padding: 8px 36px;
 	background-color: var(--primary-color);
 	border-radius: 10px;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.1s ease-in-out;
 }
 .card-price .btn:hover {
 	background-color: #000c43;
-	transform: scale(1.2);
+	transform: scale(1.05);
 	font-weight: bold;
 }
 
@@ -453,7 +456,7 @@ form .flex {
 	transition: all 0.25s;
 }
 .case:hover {
-	transform: scale(1.05);
+	transform: scale(1.01);
 }
 
 .case-text {
@@ -485,15 +488,15 @@ form .flex {
 	z-index: -1;
 }
 .case:nth-child(1)::before {
-	background-image: url('../images/Case_Alpha.png');
+	background-image: url('../images/Case_Alpha.webp');
 	border-radius: 1rem;
 }
 .case:nth-child(2)::before {
-	background-image: url('../images/Case_Urgemed.png');
+	background-image: url('../images/Case_Urgemed.webp');
 	border-radius: 1rem;
 }
 .case:nth-child(3)::before {
-	background-image: url('../images/Case_Jmg_contabilidade.png');
+	background-image: url('../images/Case_Jmg_contabilidade.webp');
 	border-radius: 1rem;
 }
 /* Portfolio Hero */
@@ -535,8 +538,7 @@ form .flex {
 	margin-bottom: 5rem;
 }
 .hero-btn:hover {
-	transform: scale(1.2);
-	font-weight: bold;
+	transform: scale(1.05);
 }
 
 .portfolio-hero-img {
@@ -651,7 +653,7 @@ form .flex {
 		max-width: 100%;
 	}
 	.prices .precos {
-		font-size: 36px;
+		font-size: 1rem;
 	}
 	.prices .card-price {
 		height: 600px;
