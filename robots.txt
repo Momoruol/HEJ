@@ -1,0 +1,15 @@
+# Permitir acesso a todos os rastreadores
+User-agent: *
+Allow: /
+
+# Sitemap do site
+Sitemap: https://hejtech.com.br/sitemap.xml
+
+# Bloquear pastas ou arquivos desnecessários (exemplos)
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /temp/
+
+# Bloquear parâmetros que não devem ser indexados (se houver)
+Disallow: /*?*utm_*
