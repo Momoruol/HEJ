@@ -106,6 +106,20 @@ a {
 span {
 	font-size: 1.25rem;
 }
+.btn {
+	display: block;
+	background-color: white;
+	font-size: 20px;
+	padding: 12px 32px;
+	margin: 2rem auto;
+	border-radius: 12px;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+.btn:hover {
+	transform: scale(1.05);
+	background-color: #f0f0f0f0;
+}
 
 /* NavBar */
 
@@ -119,6 +133,9 @@ span {
 .nav ul {
 	display: flex;
 	gap: 32px;
+}
+.navbar .container {
+	font-size: 1.25rem;
 }
 
 /* Hero Section */
@@ -143,7 +160,7 @@ span {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 32px;
+	gap: 3rem;
 }
 .hero .titulo {
 	letter-spacing: 8px;
@@ -155,6 +172,9 @@ span {
 	text-transform: uppercase;
 	text-align: center;
 }
+.hero .titulo strong {
+	font-size: 40px;
+}
 .hero .texto-titulo {
 	text-align: center;
 }
@@ -162,6 +182,9 @@ span {
 	font-weight: 300;
 	margin: 25px;
 	padding: 15px 20px;
+}
+.header .btn a {
+	color: #000;
 }
 
 /* Hero CTA */
@@ -347,7 +370,7 @@ span {
 	transition: all 0.1s ease-in-out;
 }
 .card-price .btn:hover {
-	background-color: #000c43;
+	background-color: #1900a5ff;
 	transform: scale(1.05);
 	font-weight: bold;
 }
@@ -690,6 +713,9 @@ form .flex {
 	form .form .button {
 		width: 90%;
 	}
+	footer.transparent {
+		background-color: var(--primary-color);
+	}
 }
 @media (max-width: 425px) {
 	.divider {
@@ -722,5 +748,8 @@ form .flex {
 	}
 	form .form .button {
 		width: 90%;
+	}
+	.hero .titulo strong {
+		font-size: 30px;
 	}
 }

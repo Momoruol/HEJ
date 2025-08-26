@@ -4,12 +4,3 @@ Allow: /
 
 # Sitemap do site
 Sitemap: https://hejtech.com.br/sitemap.xml
-
-# Bloquear pastas ou arquivos desnecessários (exemplos)
-Disallow: /admin/
-Disallow: /wp-admin/
-Disallow: /cgi-bin/
-Disallow: /temp/
-
-# Bloquear parâmetros que não devem ser indexados (se houver)
-Disallow: /*?*utm_*
