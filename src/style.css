@@ -176,6 +176,9 @@ span {
 	font-size: 40px;
 }
 .hero .texto-titulo {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 	text-align: center;
 }
 .hero .texto-titulo p {
