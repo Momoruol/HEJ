@@ -1,0 +1,36 @@
+.transparent {
+  background-color: transparent;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background: #170093;
+  background: linear-gradient(180deg, rgba(23, 0, 147, 0.6) 0%, rgba(23, 0, 64, 0.8) 50%, #170093 97%), url(../images/wrapper.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero {
+  height: 800px;
+}
+
+.custom-shape-divider-top-1746882921 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1746882921 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1746882921 .shape-fill {
+  fill: #170093;
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <script type="application/ld+json">
@@ -61,7 +61,7 @@
     />
     <meta
       name="description"
-      content="Agência de web design especializada em soluções digitais totalmente personalizadas, criando sites exclusivos e funcionais para seu negócio."
+      content="Desenvolvedores especializados em soluções digitais totalmente personalizadas, criando softwares exclusivos e funcionais para seu negócio."
     />
     <meta
       name="keywords"
@@ -89,46 +89,57 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="bootstrap.bundle.min.js" defer></script>
   </head>
   <body>
-    <header class="wrapper">
+    <header class="wrapper text-light">
       <!-- Navbar -->
-      <div class="navbar transparent" id="inicio">
-        <div class="container flex">
-          <div class="logo">
+      <nav class="navbar navbar-expand navbar-dark transparent" id="inicio">
+        <div class="container">
+          <div class="navbar-brand">
             <p>HEJ Tech</p>
           </div>
-          <nav class="nav">
-            <ul>
-              <li><a href="index.html">Início</a></li>
-              <li><a href="portfolio.html">Portfólio</a></li>
-              <li><a href="contato.html">Contato</a></li>
+          <div class="nav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfólio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
             </ul>
-          </nav>
+          </div>
         </div>
-      </div>
+      </nav>
 
       <!-- Hero -->
-      <section class="hero-section">
-        <div class="container hero-container">
-          <div class="header">
-            <div class="hero">
-              <h2 class="titulo">HEJ Tecnologia & Consultoria</h2>
-              <div class="texto-titulo">
-                <h2>
+      <section class="hero position-relative">
+        <div class="container h-100">
+          <div class="d-flex h-100">
+            <div
+              class="h-100 d-flex flex-column justify-content-center align-items-center gap-5"
+            >
+              <h2 class="h1 fw-bolder text-uppercase text-center">
+                HEJ Tecnologia & Consultoria
+              </h2>
+              <div class="d-flex flex-column gap-4 text-center">
+                <h2 class="fw-normal">
                   Sua empresa merece mais: na HEJ Tecnologia, unimos automação e
                   desenvolvimento web para entregar eficiência e resultados.
                   Vamos levar seu negócio para o próximo nível?
                 </h2>
                 <div>
-                  <button class="btn">
-                    <a
-                      target-="_blank"
-                      href="https://api.whatsapp.com/send?phone=5554996246605&text=Quero%20um%20orçamento%20para%20meu%20neg%C3%B3cio."
-                      >Solicite seu orçamento agora!</a
-                    >
-                  </button>
+                  <a
+                    class="btn btn-outline-light btn-lg"
+                    target-="_blank"
+                    href="https://api.whatsapp.com/send?phone=5554996246605&text=Quero%20um%20orçamento%20para%20meu%20neg%C3%B3cio."
+                    >Solicite seu orçamento agora!</a
+                  >
                 </div>
               </div>
             </div>
@@ -137,7 +148,7 @@
       </section>
     </header>
     <main>
-      <div class="divider">
+      <div class="position-relative">
         <div class="custom-shape-divider-top-1746882921">
           <svg
             data-name="Layer 1"
