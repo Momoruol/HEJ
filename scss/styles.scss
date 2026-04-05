@@ -1,4 +1,6 @@
 $primary: #170093;
+
+//Hero
 $hero-height:800px; 
 
 .transparent{
@@ -6,13 +8,12 @@ $hero-height:800px;
 }
 .wrapper{
     min-height: 100vh;
-    background: $primary;
     background:
         linear-gradient(
          180deg,
-          rgba(23, 0, 147, 0.6) 0%,
-         rgba(23, 0, 64, 0.8) 50%,
-         $primary 97%
+          rgba(23, 0, 147, 0.6) 20%,
+         rgba(23, 0, 64, 0.8) 70%,
+         #170040 87%
       ),
      url(../images/wrapper.webp);
     background-size: cover;
@@ -22,6 +23,8 @@ $hero-height:800px;
 .hero{
     height: $hero-height;
 }
+
+//Divider
 .custom-shape-divider-top-1746882921 {
   position: absolute;
   top: 0;
@@ -39,5 +42,42 @@ $hero-height:800px;
 }
 
 .custom-shape-divider-top-1746882921 .shape-fill {
-  fill: $primary;
+  fill: #170040
+}
+
+//CTA
+.cta img{
+  max-width: 500px;
+}
+
+//About
+.about{
+  background: #170093;
+  background: linear-gradient(180deg, rgba(23, 0, 147, 1) 50%, #170040 100%);
+}
+
+.about .row img{
+  filter: invert(1);
+}
+
+//Divider 2
+/* divider about */
+.custom-shape-divider-top-1746883469 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1746883469 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+}
+
+.custom-shape-divider-top-1746883469 .shape-fill {
+  fill: #170040;
 }
